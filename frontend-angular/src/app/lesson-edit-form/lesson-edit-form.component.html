@@ -1,0 +1,18 @@
+<!-- flashcard.component.html -->
+<div class="container">
+  <form [formGroup]="flashcardForm" (ngSubmit)="addFlashcard()">
+    <h2 class="form-title">Veuillez ajouter une flashcard</h2>
+    <label for="matiere">Matière:</label>
+    <select id="matiere" formControlName="matiere" required>
+      <option *ngFor="let matiere of matieres" [value]="matiere">{{ matiere }}</option>
+    </select>
+  
+    <label for="question">Question:</label>
+    <input type="text" id="question" formControlName="question" required>
+  
+    <label for="answer">Réponse:</label>
+    <input type="text" id="answer" formControlName="answer" required>
+  
+    <button type="submit">Ajouter la flashcard</button>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Menu</a>
+    <ul class="navbar-nav mr-auto">
+    <li ngbDropdown class="nav-item">
+    <a ngbDropdownToggle id="navbarMenu2" class="nav-link dropdowntoggle" role="button">
+    </a>
+    <div ngbDropdownMenu aria-labelledby="navbarMenu2" class="dropdownmenu">
+    <a class="dropdown-item" routerLink="/lesson-edit-form">Ajouter une flashcard</a>
+   <a class="dropdown-item" routerLink="/revision">S'entrainer</a>
+   
+    </div>
+    </li>
+    </ul>
+   </nav>
+   <router-outlet></router-outlet>
+   <app-home></app-home>

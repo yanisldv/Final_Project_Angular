@@ -1,0 +1,20 @@
+
+<!-- landing-page.component.html -->
+<div>
+    <h1>Flashcards exercise</h1>
+    <label for="matiereSelect">Veuillez choisir une matière :</label>
+    <select id="matiereSelect" [(ngModel)]="selectedMatiere">
+      <option value="" disabled selected>Choisissez une matière</option>
+      <option *ngFor="let matiere of matieres" [value]="matiere">{{ matiere }}</option>
+    </select>
+  
+    <label for="flashcardsSelect">Nombre de flashcards :</label>
+    <select id="flashcardsSelect" [(ngModel)]="selectedNumberOfFlashcards">
+      <option *ngFor="let numberOfFlashcards of availableNumberOfFlashcards" [value]="numberOfFlashcards">
+        {{ numberOfFlashcards }}
+      </option>
+    </select>
+  
+    <button *ngIf="selectedMatiere" (click)="redirectToFlashcards()">Voir les flashcards</button>
+  </div>
+  

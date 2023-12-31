@@ -1,0 +1,20 @@
+
+<div class="flashcard">
+  <div class="flashcard-header">{{ currentFlashcard.matiere }}</div>
+    <div *ngIf="!showAnswer" (click)="toggleAnswer()" class="question">
+      {{ currentFlashcard.question }}
+    </div>
+    <div *ngIf="showAnswer" (click)="toggleAnswer()" class="answer">
+      {{ currentFlashcard.answer }}
+    </div>
+    <button class ="flash" (click)="toggleAnswer()">Show Answer</button>
+  </div>
+  
+  <div class="evaluation-section">
+    <p>Choose an evaluation:</p>
+    <button (click)="evaluateQuestion('easy')">Easy</button>
+    <button (click)="evaluateQuestion('medium')">Medium</button>
+    <button (click)="evaluateQuestion('difficult')">Difficult</button>
+  </div>
+  <p *ngIf="evaluationMessage">{{ evaluationMessage }}</p>
+  <button (click) ="nextFlashcard()">Next flashcard</button>
