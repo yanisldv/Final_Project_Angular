@@ -17,9 +17,21 @@ The Flashcards Website is an interactive platform designed to facilitate learnin
 1. **Homepage:**  
 [Homepage](./homepage.png)
 
-2. **Explore Features:** Discover the interactive flashcards, progress tracking, and customizable study sets.
+2. **Menu:**  
+[Menu](./menu.png)
 
-3. **Start Learning:** Utilize the menu drop-down bar to begin your learning journey.
+3. **Add flashcards:**  
+[Preview](./Add.png)
+
+4. **Choose your training:**  
+[Preview](./Train.png)
+
+5. **Learn:**  
+[Preview](./flashcard.png)
+
+6. **Explore Features:** Discover the interactive flashcards, progress tracking, and customizable study sets.
+
+7. **Start Learning:** Utilize the menu drop-down bar to begin your learning journey.
 
 ## Usage
 
